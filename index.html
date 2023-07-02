@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://kit.fontawesome.com/7638dbaa87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+         <div class="container">
+             <nav>
+                 <h2>My Portfolio</h2>
+                 <ul id="sidemenu">
+                     <li><a href="#header">Home</a></li>
+                     <li><a href="#about">About</a></li>
+                     <li><a href="#portfolio">Portfolio</a></li>
+                     <li><a href="#contact">Contact</a></li>
+                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                 </ul>
+                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+             </nav>
+             <div class="header-text">
+                 <p>GIS Developer | Spatial Analyst | Writer</p>
+                 <h1>I'm Mohammad <span>Rizal</span> Ardiansyah</h1>
+                 <h2>This is my portfolio website to show details about me and my project</h2>
+                 <a href="" download class="btn btn2">Download CV</a>
+             </div>
+         </div>
+    </div>
+<!------------About----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/photo1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Final-year Geography Student with an interest in research, writing, surveying, and mapping. 
+                        I have participated in several internships and worked in terms of spatial data processing, 
+                        data collection, website management, media management, and content writing. Likes to learn new things, 
+                        think critically, and be proficient in problem solving.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Mapping</span><br>Create map and data visualization using GIS software (ArcGIS, QGIS, Global Mapper)</li>
+                            <li><span>Spatial Analysis</span><br>Analyze spatial and non-spatial data (ArcGIS, QGIS, Envi, Microsoft Excel, Tableau)</li>
+                            <li><span>WebGIS Development</span><br>Develop WebGIS (HTML, CSS, Javascript)</li>
+                            <li><span>Writing</span><br>Write an article and SEO optimization</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Ditjen Tata Ruang, Kementerian ATR/BPN</span><br><b>Internship In Spatial Planning for Regional and National Growth (INSPIRING)</b><br><i>February 2022 - July 2022</i>
+                            <ol>
+                                <li>Manage the database of Spatial Planning and Regional Planning Map</li>
+                                <li>Adjusting the plan book and analyst fact book with the new rules</li>
+                                <li>Collecting supporting data in the preparation of Spatial Planning and Regional Planning</li>
+                            </ol>
+                            </li>
+                            <li><span>CV Citarasa Rempah Indonesia (REINA)</span><br><b>Internship as Admin and Web Optimize</b><br><i>July 2022 - October 2022</i>
+                                <ol>
+                                    <li>Manage and maintain the company website</li>
+                                    <li>Optimizing the appearance and performance of the company website</li>
+                                    <li>Optimizing SEO on the company website</li>
+                                </ol>
+                            </li>
+                            <li><span>Badan Pusat Statistik (BPS)</span><br><b>Field Data Officer on Social and Economic Registration</b><br><i>October 2022 - November 2022</i>
+                                <ol>
+                                    <li>Collect population data in the census area</li>
+                                    <li>Geotagging every resident's house</li>
+                                    <li>Recapitulate the results of field data collection</li>
+                                </ol>
+                            </li>
+                            <li><span>Kabarbuana.com</span><br><b>Editorial Secretary and Content Writer</b><br><i>Desember 2022 - June 2023</i>
+                                <ol>
+                                    <li>Write articles</li>
+                                    <li>Create content writer productivity reports</li>
+                                    <li>Managing advertising and social media</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SMAN 1 Genteng</span><br>Major in Social Science<br>2016 - 2019</li>
+                            <li><span>Universitas Negeri Semarang</span><br>Bachelor's Degree in Geography<br>2019 - 2023<br>GPA 3.63/4.00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!---------Portfolio-------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="img/Webgis.jpg">
+                <div class="layer">
+                    <h3>WebGIS</h3>
+                    <p>A collection of webgis projects that I have created.</p>
+                    <a href="webgis.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="img/Map.jpg">
+                <div class="layer">
+                    <h3>Maps</h3>
+                    <p>A collection of Map projects that I have created.</p>
+                    <a href="Maps.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="img/Writing.jpg">
+                <div class="layer">
+                    <h3>Writing</h3>
+                    <p>A collection of writings that I have made while joining Kabarbuana.com</p>
+                    <a href="https://www.kabarbuana.com/author/19193/Mohammad-Rizal-Ardiansyah" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-----Contact------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> mohammadrizala@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 083847544225</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/mohammadrizala" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/mohammadrizala" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/mohammadrizala" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="announcement"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2023 by Mohammad Rizal Ardiansyah</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxWiku1Qnob0Tp4vWE1XhQPK0OU8itNjwyF3XaTZlhm5WhSK-JjhwboGTTFb6_HvtU5/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const announcement = document.getElementById("announcement")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            announcement.innerHTML = "Your Message Sent Successfully"
+            setTimeout(function(){
+                announcement.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+    // Source: https://github.com/jamiewilson/form-to-google-sheets
+  </script>
+</body>
+</html>
