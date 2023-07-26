@@ -59,14 +59,14 @@ nav ul li a:hover::after{
     font-size: 21px;
 }
 .header-text h1{
-    font-size: 35px;
+    font-size: 38px;
     margin-top: 20px;
 }
 .header-text h1 span{
     color: #00BFFF;
 }
 .header-text h2{
-    font-size: 21px;
+    font-size: 25px;
     font-weight: 200;
     margin-top: 20px;
 }
