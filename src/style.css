@@ -14,7 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(/img/header_background.png);
+    background-image: url(../img/header_background.png);
     background-size: cover;
     background-position: center;
 }
@@ -63,7 +63,7 @@ nav ul li a:hover::after{
     color: #00BFFF;
 }
 .header-text h2{
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 200;
     margin-top: 20px;
 }
