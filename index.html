@@ -22,13 +22,24 @@
                  </ul>
                  <i class="fa-solid fa-bars" onclick="openmenu()"></i>
              </nav>
-             <div class="header-text">
-                 <p>GIS Developer | Spatial Analyst | Content Writer</p>
-                 <h1>I'm Mohammad <span>Rizal</span> Ardiansyah</h1>
-                 <h2>This is my portfolio website to show details about me and my project</h2>
-                 <a href="document/CV_Mohammad Rizal Ardiansyah.pdf" download class="btn btn2">Download CV</a>
-             </div>
          </div>
+         <section class="home">
+            <div class="header-text">
+                <p>GIS Developer | Spatial Analyst | Content Writer</p>
+                <h1>I'm Mohammad <span>Rizal</span> Ardiansyah</h1>
+                <h2>This is my portfolio website to show details about me and my project</h2>
+                <a href="document/CV_Mohammad Rizal Ardiansyah.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="home-img">
+                <div class="glowing-img">
+                    <span></span>
+                    <span></span>
+                    <div class="image">
+                        <img src="img/photo2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 <!------------About----------->
     <div id="about">
@@ -170,6 +181,7 @@
             </div>
         </div>
     </div>
+    <button onclick="scrollToTop()" id="scrollUpBtn" title="Go to top">&#8679;</button>
     <div class="copyright">
         <p>Copyright <i class="fa-regular fa-copyright"></i> 2023 by Mohammad Rizal Ardiansyah</p>
     </div>
@@ -218,6 +230,24 @@
         .catch(error => console.error('Error!', error.message))
     })
     // Source: https://github.com/jamiewilson/form-to-google-sheets
+
+    //Scroll Up
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    var scrollBtn = document.getElementById("scrollUpBtn");
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollBtn.style.display = "block";
+    } else {
+        scrollBtn.style.display = "none";
+    }
+    }
+
+    function scrollToTop() {
+    document.body.scrollTop = 0; // Untuk Safari
+    document.documentElement.scrollTop = 0; // Untuk Chrome, Firefox, IE, dan Opera
+    }
   </script>
 </body>
 </html>
