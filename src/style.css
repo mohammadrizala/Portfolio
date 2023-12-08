@@ -206,7 +206,7 @@ nav ul li a:hover::after{
 /*---------Portfolio-------*/
 #portfolio{
     padding: 50px 0;
-    height: 90vh;
+    height: 100vh;
 }
 .project-list{
     display: grid;
